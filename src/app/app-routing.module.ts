@@ -7,8 +7,13 @@ import { ProjetsComponent } from './projets/projets.component';
 
 const routes: Routes = [
   {
+  path:'',
+  redirectTo:'profil',
+  pathMatch:'full'
+},
+{
   path:'profil',
-  component: ProfilComponent
+  component:ProfilComponent
 },
 {
   path:'competences',
