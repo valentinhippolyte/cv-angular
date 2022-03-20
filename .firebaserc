@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "moncv-4ea33": {
+      "hosting": {
+        "cv-angular": [
+          "moncv-4ea33"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "moncv-4ea33"
+  }
+}

@@ -105,6 +105,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "cv-angular:build:production",
+            "firebaseProject": "moncv-4ea33",
+            "firebaseHostingSite": "moncv-4ea33"
+          }
         }
       }
     }
