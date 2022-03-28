@@ -21,6 +21,9 @@ import { AngularFireModule } from "@angular/fire/compat";
 // import { AngularFireAuthModule, USE_EMULATOR as USE_AUTH_EMULATOR } from "@angular/fire/compat/auth";
 import {FormsModule} from '@angular/forms';
 
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+
 
 const firebaseUiAuthConfig: firebaseui.auth.Config = {
   signInFlow: 'popup',
@@ -74,8 +77,9 @@ const firebaseUiAuthConfig: firebaseui.auth.Config = {
     AngularFireModule.initializeApp(environment.firebaseConfig),
     FirebaseUIModule.forRoot(firebaseUiAuthConfig),
     AngularFireAuthModule,
-    FirebaseAppModule
-
+    FirebaseAppModule, 
+    MatCardModule, 
+    MatButtonModule
   ],
   providers: [
     { provide: USE_AUTH_EMULATOR, useValue: !environment.production ? ['localhost', 9099] : undefined },
